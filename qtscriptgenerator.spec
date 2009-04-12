@@ -1,6 +1,6 @@
 Name:          qtscriptgenerator
 Version:       0.1.0
-Release:       %mkrel 1
+Release:       %mkrel 2
 Summary:       A tool to generate Qt bindings for Qt Script    
 Group:         System/Libraries
 License:       GPLv2   
@@ -31,7 +31,7 @@ Qt Script Generator is a tool to generate Qt bindings for Qt Script.
 Summary:    Qt bindings for Qt Script
 Group:      System/Libraries
 Provides:   qtscript-qt = %{version}-%{release}
-Requires:   qt4 >= 3:4.4.5
+Requires:   qt4
 
 %description -n qtscriptbindings
 Bindings providing access to substantial portions of the Qt API
