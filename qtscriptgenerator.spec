@@ -9,6 +9,7 @@ Source0:       http://qtscriptgenerator.googlecode.com/files/qtscriptgenerator-s
 Patch0:        qtscriptgenerator-src-0.1.0-fix-strings.patch
 Patch1:        include_everything.patch
 Patch2:        qtscriptgenerator-src-0.1.0-fix-build.patch
+BuildRoot:     %_tmppath/%name-%version-%release-root
 BuildRequires: libxslt-proc
 BuildRequires: phonon-devel >= 4.3.1
 BuildRequires: qt4-devel >= 3:4.5.0
