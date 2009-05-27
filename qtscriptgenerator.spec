@@ -1,6 +1,6 @@
 Name:          qtscriptgenerator
 Version:       0.1.0
-Release:       %mkrel 3
+Release:       %mkrel 4
 Summary:       A tool to generate Qt bindings for Qt Script    
 Group:         System/Libraries
 License:       GPLv2   
@@ -9,6 +9,7 @@ Source0:       http://qtscriptgenerator.googlecode.com/files/qtscriptgenerator-s
 Patch0:        qtscriptgenerator-src-0.1.0-fix-strings.patch
 Patch1:        include_everything.patch
 Patch2:        qtscriptgenerator-src-0.1.0-fix-build.patch
+Patch3:        qtscriptgenerator-src-0.1.0-fix-gcc44.patch
 BuildRoot:     %_tmppath/%name-%version-%release-root
 BuildRequires: libxslt-proc
 BuildRequires: phonon-devel >= 4.3.1
@@ -53,7 +54,7 @@ from within Qt Script.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p0
-
+%patch3 -p1
 %build
 
 # workaround buildsys bogosity, see also:
