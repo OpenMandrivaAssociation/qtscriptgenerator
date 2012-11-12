@@ -1,0 +1,11 @@
+--- qtscriptgenerator-src-0.1.0/generator/reporthandler.cpp~	2009-02-20 12:42:24.000000000 +0100
++++ qtscriptgenerator-src-0.1.0/generator/reporthandler.cpp	2009-04-11 11:39:43.000000000 +0200
+@@ -39,7 +39,7 @@
+     if (db && db->isSuppressedWarning(warningText)) {
+         ++m_suppressed_count;
+     } else if (!m_reported_warnings.contains(warningText)) {
+-        qDebug(qPrintable(warningText));
++        qDebug("%s", qPrintable(warningText));
+         ++m_warning_count;
+ 
+         m_reported_warnings.insert(warningText);

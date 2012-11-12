@@ -1,0 +1,32 @@
+--- qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-engine-bits.h~	2009-02-20 12:42:24.000000000 +0100
++++ qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-engine-bits.h	2009-05-27 01:24:39.000000000 +0200
+@@ -15,6 +15,8 @@
+ #ifndef PP_ENGINE_BITS_H
+ #define PP_ENGINE_BITS_H
+ 
++#include <cstdio>
++
+ namespace rpp {
+ 
+ inline std::string pp::fix_file_path(std::string const &filename) const
+--- qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-macro-expander.h~	2009-02-20 12:42:24.000000000 +0100
++++ qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-macro-expander.h	2009-05-27 01:26:14.000000000 +0200
+@@ -15,6 +15,8 @@
+ #ifndef PP_MACRO_EXPANDER_H
+ #define PP_MACRO_EXPANDER_H
+ 
++#include <cstdio>
++
+ namespace rpp {
+ 
+ struct pp_frame
+--- qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-internal.h~	2009-02-20 12:42:24.000000000 +0100
++++ qtscriptgenerator-src-0.1.0/generator/parser/rpp/pp-internal.h	2009-05-27 01:30:04.000000000 +0200
+@@ -16,6 +16,7 @@
+ #define PP_INTERNAL_H
+ 
+ #include <algorithm>
++#include <cstdio>
+ 
+ namespace rpp {
+ 
