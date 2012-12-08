@@ -1,6 +1,6 @@
 Name:          qtscriptgenerator
 Version:       0.1.0
-Release:       %mkrel 8
+Release:       %mkrel 10
 Summary:       A tool to generate Qt bindings for Qt Script    
 Group:         System/Libraries
 License:       GPLv2   
@@ -10,6 +10,7 @@ Patch0:        qtscriptgenerator-src-0.1.0-fix-strings.patch
 Patch1:        include_everything.patch
 Patch2:        qtscriptgenerator-src-0.1.0-fix-build.patch
 Patch3:        qtscriptgenerator-src-0.1.0-fix-gcc44.patch
+Patch4:        qtscriptgenerator-src-0.1.0-no_QFileOpenEvent.patch
 BuildRoot:     %_tmppath/%name-%version-%release-root
 BuildRequires: libxslt-proc
 BuildRequires: phonon-devel >= 4.3.1
@@ -55,6 +56,7 @@ from within Qt Script.
 %patch1 -p1
 %patch2 -p0
 %patch3 -p1
+%patch4 -p1
 %build
 
 # workaround buildsys bogosity, see also:
@@ -93,3 +95,39 @@ install -D -p -m755 generator/generator %{buildroot}%{qt4bin}/generator
 
 %clean
 rm -rf %{buildroot} 
+
+
+%changelog
+* Tue May 01 2012 Andrew Lukoshko <andrew.lukoshko@rosalab.ru> 0.1.0-10
+- fix qt-4.8 build, omit failing QFileOpenEvent code
+
+* Thu May 05 2011 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-8mdv2011.0
++ Revision: 669390
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-7mdv2011.0
++ Revision: 607264
+- rebuild
+
+* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-5mdv2010.1
++ Revision: 523885
+- rebuilt for 2010.1
+
+* Wed May 27 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.1.0-4mdv2010.0
++ Revision: 380069
+- Fix build with gcc 4.4
+
+* Mon Apr 13 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.1.0-3mdv2009.1
++ Revision: 366538
+- Fix Requires
+
+* Sun Apr 12 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.1.0-2mdv2009.1
++ Revision: 366529
+- Fix Requires
+
+* Sun Apr 12 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.1.0-1mdv2009.1
++ Revision: 366505
+- Add BuildRoot
+- import qtscriptgenerator
+
+
