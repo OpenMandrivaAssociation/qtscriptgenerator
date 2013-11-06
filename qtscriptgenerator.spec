@@ -18,6 +18,7 @@ Patch5:		qtscriptgenerator-0.2.0-arm-ftbfs-float.patch
 
 BuildRequires:	xsltproc
 BuildRequires:	phonon-devel
+BuildRequires:	pkgconfig(QtWebKit)
 BuildRequires:	qt4-devel
 
 # not strictly required, but the expectation would be for the 
