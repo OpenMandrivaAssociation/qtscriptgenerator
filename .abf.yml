@@ -1,2 +1,4 @@
+removed_sources:
+  qtscriptgenerator-src-0.1.0.tar.gz: eeae733106369e289f257b754822bc372fd6ba75
 sources:
-  "qtscriptgenerator-src-0.1.0.tar.gz": eeae733106369e289f257b754822bc372fd6ba75
+  qtscriptgenerator-src-0.2.0.tar.gz: 4c1078f26b196156e857c17c9d11a66cfea66f00
