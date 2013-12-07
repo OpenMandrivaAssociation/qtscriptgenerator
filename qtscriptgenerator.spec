@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 Name:          qtscriptgenerator
 Version:       0.2.0
-Release:       1
+Release:       2
 Summary:       A tool to generate Qt bindings for Qt Script    
 Group:         System/Libraries
 License:       GPLv2   
