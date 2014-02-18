@@ -16,7 +16,7 @@ Patch3:		memory_alignment_fix.diff
 Patch4:		qtscriptgenerator-src-0.1.0-qmake_target.path.patch
 # fix arm ftbfs, kudos to mamba
 Patch5:		qtscriptgenerator-0.2.0-arm-ftbfs-float.patch
-BuildRequires:	xsltproc
+BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(phonon)
 BuildRequires:	pkgconfig(QtWebKit)
