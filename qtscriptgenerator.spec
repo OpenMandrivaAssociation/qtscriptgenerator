@@ -3,7 +3,7 @@
 Summary:	A tool to generate Qt bindings for Qt Script    
 Name:		qtscriptgenerator
 Version:	0.2.0
-Release:	7
+Release:	8
 Group:		System/Libraries
 License:	GPLv2   
 Url:		http://code.google.com/p/qtscriptgenerator/ 
