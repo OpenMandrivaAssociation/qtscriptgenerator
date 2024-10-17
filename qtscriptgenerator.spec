@@ -6,7 +6,7 @@ Version:	0.2.0
 Release:	9
 Group:		System/Libraries
 License:	GPLv2   
-Url:		http://code.google.com/p/qtscriptgenerator/ 
+Url:		https://code.google.com/p/qtscriptgenerator/ 
 Source0:	http://qtscriptgenerator.googlecode.com/files/qtscriptgenerator-src-%{version}.tar.gz
 Source100:	%{name}.rpmlintrc
 Patch0:		qtscriptgenerator-src-0.1.0-fix-strings.patch
